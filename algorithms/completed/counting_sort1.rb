@@ -1,17 +1,10 @@
 #!/bin/ruby
-#https://www.hackerrank.com/challenges/countingsort2/problem
+#https://www.hackerrank.com/challenges/countingsort1/problem
 #completed 2/1/18
 
-def counted_array(arr)
+def countingSort(arr)
   answer = Array.new(100,0)
   arr.each { |num| answer[num] += 1 }
-  answer
-end
-
-def countingSort(arr)
-  count = counted_array(arr)
-  answer = []
-  count.each_with_index { |c,i| c.times { answer << i }}
   answer
 end
 
